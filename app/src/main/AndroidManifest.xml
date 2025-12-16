@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/status"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/status"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Receiver Estático -->
+        <receiver
+            android:name="com.example.monitordestatus.receiver.MonitorBateriaReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- Activity Principal -->
+        <activity
+            android:name="com.example.monitordestatus.ui.MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Monitor de Status do Dispositivo</string>
+    <string name="app_title">Monitor de Status</string>
+
+    <string name="battery_channel_name">Avisos de Bateria</string>
+    <string name="battery_warning_title">Bateria Fraca</string>
+    <string name="battery_warning_message">
+        O nível da bateria está baixo. Conecte o carregador.
+    </string>
+
+</resources>
